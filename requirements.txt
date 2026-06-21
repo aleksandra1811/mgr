@@ -1,0 +1,46 @@
+# =============================================================================
+# Requirements dla restauracji obrazów portretowych CelebA-HQ
+# Testowane na RTX 3070 (8GB VRAM), Python 3.10+
+# =============================================================================
+
+# PyTorch - CUDA 11.8 (dostosuj do swojej wersji CUDA)
+# Instalacja: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Przetwarzanie obrazów
+opencv-python>=4.8.0
+albumentations>=1.3.1
+Pillow>=10.0.0
+
+# Numeryczne
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Progress bar i CLI
+tqdm>=4.65.0
+
+# Wizualizacja (opcjonalne, do analizy wyników)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# =============================================================================
+# INSTALACJA
+# =============================================================================
+# 
+# 1. Utwórz środowisko wirtualne:
+#    python -m venv venv
+#    source venv/bin/activate  # Linux/Mac
+#    venv\Scripts\activate     # Windows
+#
+# 2. Zainstaluj PyTorch z CUDA (sprawdź wersję na pytorch.org):
+#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+#
+# 3. Zainstaluj pozostałe zależności:
+#    pip install -r requirements.txt
+#
+# 4. Sprawdź instalację:
+#    python -c "import torch; print(f'PyTorch: {torch.__version__}, CUDA: {torch.cuda.is_available()}')"
+#
+# =============================================================================
